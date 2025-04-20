@@ -1,0 +1,18 @@
+<!-- public/404.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      const path = location.pathname;
+      const query = location.search;
+      const hash = location.hash;
+      const redirectUrl = '/' + '?' + 'redirect=' + encodeURIComponent(path + query + hash);
+      window.location.replace(redirectUrl);
+    </script>
+  </head>
+  <body>
+    <p>リダイレクト中...</p>
+  </body>
+</html>
